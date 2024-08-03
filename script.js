@@ -15,8 +15,8 @@ document.addEventListener('scroll', function() {
 
 document.getElementById('downloadBtn').addEventListener('click', function() {
     var link = document.createElement('a');
-    link.href = 'file/CV -Nala Hoirun Nisa.pdf';
-    link.download = 'My_CV.pdf';
+    link.href = 'file/CV - Nala Hoirun Nisa.pdf';
+    link.download = 'CV - Nala Hoirun Nisa.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
