@@ -1,22 +1,27 @@
-document.addEventListener('DOMContentLoaded', function () {
-    animateProgressBar();
+function toggleMenu() {
+    var navbarLinks = document.getElementById("navbar");  
+    navbarLinks.classList.toggle("active");
+}
+
+document.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 0) {
+      header.classList.add('header-shadow');
+    } else {
+      header.classList.remove('header-shadow');
+    }
+  }
+);
+
+document.getElementById('downloadBtn').addEventListener('click', function() {
+    var link = document.createElement('a');
+    link.href = 'file/CV -Nala Hoirun Nisa.pdf';
+    link.download = 'My_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 });
 
-function animateProgressBar() {
-    const progressBars = document.querySelectorAll('.progress-bar');
 
-    progressBars.forEach(progressBar => {
-        const percentage = parseInt(progressBar.parentNode.previousElementSibling.querySelector('.val').innerText);
-        let width = 0;
-        const interval = setInterval(frame, 10);
+  
 
-        function frame() {
-            if (width >= percentage) {
-                clearInterval(interval);
-            } else {
-                width++;
-                progressBar.style.width = width + '%';
-            }
-        }
-    });
-}

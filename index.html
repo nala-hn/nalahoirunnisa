@@ -7,44 +7,57 @@
 
     <link rel="stylesheet" href="style.css">
     <title>Nala Hoirun Nisa</title>
+
+    <link rel="icon" href="assets/iconNala.png">
     
 </head>
 <body>
     <header id="header">
-        <div class="header-content">
-            <h1><i class="bi bi-chat-heart"></i> <a href="index.html"></a> Nal</h1>
+        <nav class="header-container">
+            <div class="header-content">
+                <div class="name">
+                    <a href="#home">
+                        <h1><i class="bi bi-chat-heart"></i> Nal</h1>
+                    </a>
+                </div>
 
-            <div class="navbar">
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="hobby.html">Hobby</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+                <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
 
-            <div class="header-social-links">
-                <a href="https://x.com/bignaboiy" class="twitter"><i class="bi bi-twitter-x"></i></a>
-                <a href="https://www.linkedin.com/in/nala-hoirunnisa-82a02a213/" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://github.com/nala-hn" class="github"><i class="bi bi-github"></i></a>
-                <a href="https://www.instagram.com/nala.hn/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+                <div class="navbar" id="navbar">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <button onclick="location.href='#contact'"></a>Contact Me</button>
+                    </ul>
+                </div>
             </div>
-        </div>  
+        </nav>  
     </header>
 
-    <section id="hero">
-        <div class="hero-container">
+    <section id="home">
+        <div class="home-container">
             
             <div class="left">
-                <div class="text">
-                    <h1>Hello, i'm</h1>
-                    <h1>Nala Hoirun Nisa</h1>
-                    <h2>Your Future Web Developer & Data Analyst</h2>
-                    <h2>Learning and growing in the fields of web development and data analysis. </h2>
-                    <h2>Join me on my journey!</h2>
-                    <a href="about.html"><button class="btn-about">About me</button></a>
+                <div class="text-1">
+                    <h1 style="color: #064d6d;" >Hello,</h1>
+                    <h1>i'm Nala </h1> 
+                </div>
+                <div class="text-2">
+                    <h2>Your Future <strong>Developer & Data Analyst</strong>
+                    <br>Learning and growing in the fields of web development and data analytics.
+                    <br>Join me on my journey!</h2>
+                </div>
+                <div class="social-media">
+                    <a href="nalahoirunnisa7@gmail.com" class="twitter"><i class="bi bi-envelope-at-fill"></i></i></a>
+                    <a href="https://www.linkedin.com/in/nala-hoirunnisa-82a02a213/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/nala-hn" class="github"><i class="bi bi-github"></i></a>
+                    <a href="https://x.com/bignaboiy" class="twitter"><i class="bi bi-twitter-x"></i></a>
                 </div>
             </div>
 
@@ -56,6 +69,279 @@
 
         </div>
     </section>
+    <!-- end of home section
+    about section start -->
 
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <div class="title-name">
+                    <h2>about me</h2>
+                    <h1>Keen to Know More About Me?</h1>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="row">
+                    <div class="row1">
+                        <img src="assets/profile.JPG" alt="">
+                    </div>
+    
+                    <div class="row2">
+                        <div class="row-content">
+                            <p>Hello! I'm Nala Hoirun Nisa, a passionate web developer and a seventh-semester student in Informatics Engineering at STMIK Mardira Indonesia. My journey began with a strong interest in Data Analytics, driven by my love for analyzing data. Over time, I've gained experience in that field. However, my academic journey introduced me to web programming and framework-based development, sparking a newfound passion for creating dynamic and interactive web experiences.</p>
+                            <p>Relish the challenge of blending my design skills with the technical aspects of web development. Experimenting with different programming languages and turning ideas into digital realities excites me. While I'm still at the novice stage in web development, I am dedicated to continuous learning and growth.</p>
+                            <p>Feel free to explore my evolving portfolio, which showcases my passion for both Web Development and Data Analytics. If you're interested in collaborating, please don't hesitate to reach out.</p>
+                            <p>Thank you for your time!</p>
+                            <button id="downloadBtn">Download my CV</button>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about section
+    skils section start -->
+
+    <section id="skills" style="background-color: transparent;">
+        <div class="container">
+            <div class="section-title">
+                <div class="title-name">
+                    <h2>skills</h2>
+                    <h1>What I'm Skilled In</h1>
+                    <div class="title-desc">
+                        <p>Take a quick look at the skills I've developed and honed, demonstrating my proficiency in web development and data analysis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-content">
+                <div class="row" style="display: flex;">
+                    <div class="card">
+                        <img src="assets/HTML5_Badge.svg.png" alt="Card Image" class="card-image">
+                    </div>
+                
+                    <div class="card">
+                        <img src="assets/CSS3_logo.svg.png" alt="Card Image" class="card-image">
+                    </div>
+                
+                    <div class="card">
+                        <img src="assets/Javascript_Logo.png" alt="Card Image" class="card-image">
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/reactjs-svgrepo-com.svg" class="card-image">
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/bootstrap-svgrepo-com.svg" class="card-image">
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/python-svgrepo-com.svg" alt="Card Image" class="card-image">
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/numpy-svgrepo-com.svg" alt="Card Image" class="card-image">
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/pandas-svgrepo-com.svg" alt="Card Image" class="card-image">
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/bigquery-svgrepo-com.svg" class="card-image">
+                    </div>
+                    
+                    <div class="card">
+                        <img src="assets/looker-icon.svg" class="card-image">
+                    </div>
+                    
+                    <div class="card">
+                        <img src="assets/mysql-svgrepo-com.svg" class="card-image">
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/github-142-svgrepo-com.svg" class="card-image">
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/php-svgrepo-com.svg" class="card-image">
+                    </div>
+                    
+                    <div class="card">
+                        <img src="assets/laravel-svgrepo-com.svg" class="card-image">
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/excel2-svgrepo-com.svg" class="card-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- end of skills section
+    experience section start -->
+    
+    <section id="experience">
+        <div class="container">
+            <div class="section-title">
+                <div class="title-name">
+                    <h2>experiences</h2>
+                    <h1>Milestones of My Journey</h1>
+                    <div class="title-desc">
+                        <p>These are my latest experiences, which have significantly contributed to my personal growth and skill development</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experiece-content">
+                <div class="row">
+                    <div class="card-experience">
+                        <div class="card-content">
+                            <div class="img">
+                                <img src="assets/msib.png" alt="">
+                            </div>
+                             <div class="content-desc">
+                                <h3 style="margin: 0;">MSIB at RevoU Tech Academy</h2>
+                                <ul>
+                                    <li>Analyzing vending machine sales datasets.</li>
+                                    <li>Building a web dashboard that displays the results of the vending machine sales dataset analysis.</li>
+                                </ul>
+                            </div>
+                            <p class="date">Feb 2024 - Jun 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="card-experience">
+                        <div class="card-content">
+                            <div class="img">
+                                <img src="assets/syirkah.png" alt="">
+                            </div>
+                             <div class="content-desc">
+                                <h3 style="margin: 0;">Savings and Loans Cooperative Employee at Syirkah</h2>
+                                <ul>
+                                    <li>Managing the daily administration of the cooperative, including financial record-keeping, member payments, and internal documentation.</li>
+                                    <li>Handling the process of new member registrations, membership renewals, and member fee payments.</li>
+                                    <li>Preparing financial reports and membership reports.</li>
+                                </ul>
+                            </div>
+                            <p class="date">Feb 2021 - Mar 2023</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of experience section
+    project section start -->
+
+    <section id="project" style="background-color: transparent;">
+        <div class="container">
+            <div class="section-title">
+                <div class="title-name">
+                    <h2>project</h2>
+                    <h1>Discover My Woks</h1>
+                    <div class="title-desc">
+                        <p>Take a look at some of the exciting projects I've completed. Each project highlights my dedication to exploring new ideas and achieving excellence</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-content">
+                <div class="row-project">
+                    <div class="project-card">
+                        <img src="assets/vending-DA.png" alt="Card Image" class="card-image">
+                        <div class="card-content">
+                          <h2 class="card-title">Vending Machine Sales Analysis</h2>
+                          <p class="card-text">I had responsibility to cleaned dataset and query data to obtain answers to the business questions posed. Collaborate with the data visualization team by preparing cleaned data for visualization needs.</p>
+                          <a href="#" class="card-button">spreadsheets</a>
+                          <a href="#" class="card-button">sql</a>
+                          <a href="#" class="card-button">looker studio</a>
+                          <a href="#" class="card-button">analyzing</a>
+                          <a href="https://lookerstudio.google.com/reporting/0ea376ec-6c6c-44c8-b7bc-38d37256d50f" class="button-go">go to website</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/vending-SE.png" alt="Card Image" class="card-image">
+                        <div class="card-content">
+                          <h2 class="card-title">Vending Machine Sales Dashboard</h2>
+                          <p class="card-text">Here is the dashboard website for vending machine sales analysis. I am responsible to develop and maintaining this website.</p>
+                          <a href="#" class="card-button">html</a>
+                          <a href="#" class="card-button">css</a>
+                          <a href="#" class="card-button">javaScript</a>
+                          <a href="#" class="card-button">chartJs</a>
+                          <a href="https://km-feb24-palembang-4.vercel.app/" class="button-go">go to website</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Card Image" class="card-image">
+                        <div class="card-content">
+                          <h2 class="card-title">Card Title</h2>
+                          <p class="card-text">This is a brief description of the card content. It provides more information about the item or topic of the card.</p>
+                          <a href="#" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- end of experience section
+    contact section start -->
+
+    <section id="contact" style="padding: 80px 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="contact-content">
+                    <div class="top">
+                        <h1>Let's Work Together</h2>
+                    </div>
+                    <div class="bottom">
+                        <p>Interested in collaboration? Reach out using nearby contact info. Let's create something meaningful together. Excited to hear from you!</p>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="top">
+                        <h3>Contact Information</h3>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-content">
+                            <a href="">
+                                <i class="bi bi-envelope-at-fill"></i>
+                                <p>nalahorinnisa7@gmail.com</p>
+                            </a>
+                        </div>
+                        <div class="bottom-content">
+                            <a href="https://www.linkedin.com/in/nala-hoirunnisa-82a02a213/">
+                                <i class="bi bi-linkedin"></i>
+                                <p>Nala Hoirun Nisa</p>
+                            </a>
+                        </div>
+                        <div class="bottom-content">
+                            <a href="https://github.com/nala-hn">
+                                <i class="bi bi-github"></i>
+                                <p>nala-hn</p>
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="divider"></div>
+        <div class="footer-content">
+            <p>&copy; 2024 | Designed and coded by </p>
+            <p>Nala</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
