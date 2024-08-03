@@ -69,11 +69,11 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-right: auto;
-  color: rgb(19, 18, 18);
+  color: #064d6d;
 }
 
 .name h1:hover {
-  color: #064d6d;
+  color: rgb(19, 18, 18);
 }
 
 .name h1 i {
@@ -730,14 +730,19 @@ footer {
     font-size: 15px;
   }
 
+  .home-container {
+    display: block;
+  }
+
   .home-container .right .photo {
     width: calc(100% - 25px);
+    justify-content: center;
+    align-items: center;
   }
 
   #home .home-container img {
-    width: 300px;
-    margin: 20px 60px;
-    float: inline-start;
+    width: 80%;
+    margin: 20px;
   }
 
   #home a .btn-about {
