@@ -709,6 +709,14 @@ footer {
     margin-top: 50px;
   }
 
+  .name {
+    padding: 0;
+  }
+
+  #header h1 {
+    padding: 0;
+  }
+
   #home .home-container h1 {
     font-size: 30px;
     line-height: 36px;
