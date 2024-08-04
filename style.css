@@ -348,10 +348,12 @@ section {
 
 .row-content p {
   padding-bottom: 10px;
+  padding-right: 50px;
   margin: 0;
   text-align: justify;
   color: #222222;
   font-family: "Poppins", sans-serif;
+  font-size: 18px;
 }
 
 /* //////////// end of about section //////////// */
@@ -637,10 +639,7 @@ footer {
 
   .row-content p {
     font-size: 80%;
-  }
-
-  .row img {
-    width: 86%;
+    padding-right: 0;
   }
 
   /* ///////////////////////////////////////////////////// */
@@ -696,6 +695,59 @@ footer {
   .bottom-content i {
     font-size: 20px;
     margin-top: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-container .text-1 h1 {
+    font-size: 36px;
+  }
+
+  .home-container h2 {
+    font-size: 13px;
+  }
+
+  .social-media i {
+    font-size: 16px;
+  }
+
+  .section-title h1 {
+    font-size: 38px;
+  }
+
+  .section-title h2 {
+    font-size: 16px;
+  }
+
+  .row {
+    display: block;
+    align-items: center;
+  }
+
+  .row1 img {
+    align-items: center;
+    margin: 0 calc(100% - 70%);
+    width: 65%;
+  }
+
+  .card-experience {
+    margin-bottom: 15px;
+  }
+
+  .row-project {
+    justify-content: space-around;
+  }
+
+  .project-card {
+    width: 45%;
+  }
+
+  .top h3 {
+    margin-left: 0;
+  }
+
+  .bottom-content i {
+    margin-left: 0;
   }
 }
 
@@ -824,6 +876,7 @@ footer {
 
   .row img {
     width: 60%;
+    margin: 0;
   }
 
   .title-desc p {
