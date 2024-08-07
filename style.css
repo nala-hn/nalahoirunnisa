@@ -229,7 +229,8 @@ button:focus {
 
 .right .photo img {
   float: right;
-  width: 450px;
+  width: 70%;
+  margin-right: 70px;
 }
 
 .left .text-1 {
